@@ -98,3 +98,34 @@ li {
   border-width: 15px;
   border-color: hsl(349, 71%, 52%);
 }
+
+.rules {
+  float: right;
+  }
+
+#ruleImage {
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  margin-top: -500px;
+  margin-left: 460px;
+  padding: 45px;
+  width: 304px;
+  height: auto;
+}
+
+#ruleImage > h1 {
+  color: hsl(229, 25%, 31%);
+  padding: 5%;
+}
+
+.closeButton {
+  position: absolute;
+  display: inline-block;
+  margin-left: 250px;
+  margin-top: -50px;
+}
+
+.button {
+  padding: 50px;
+}

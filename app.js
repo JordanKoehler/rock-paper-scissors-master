@@ -61,3 +61,11 @@ function winLose() {
       }
     }
   }
+
+  $(".rules").click(function() {
+  document.getElementById('ruleImage').style.display='block';
+  });
+
+$(".closeButton").click(function() {
+document.getElementById('ruleImage').style.display='none';
+});
