@@ -60,24 +60,31 @@
 
   <!-- Game  -->
 
-  <div id="RPS-main" style="display:block;">
-    <img class="triangle" src="images/bg-triangle.svg" class="triange" alt="">
+<main id="RPS-main" style="display:block;">
+  <div >
+    <div class="paper-main">
     <img id="paper" class="icon paper" src="images/icon-paper.svg" alt="">
+    </div>
+    <div class="scissors-main">
     <img id="scissors" class="icon scissors" src="images/icon-scissors.svg" alt="">
+    </div>
+    <div class="rock-main">
     <img id="rock" class="icon rock" src="images/icon-rock.svg" alt="">
+    </div>
   </div>
-
+</main>
 
   <div id="versusScreen" style="display:none;">
     <!-- Players Icon -->
     <div class="playersChoiceScreen">
+      <h3>Your Choice</h3>
       <img id="paperChoice" class="icon paper" src="images/icon-paper.svg" alt="" style="display:none;">
       <img id="scissorsChoice" class="icon scissors" src="images/icon-scissors.svg" alt="" style="display:none;">
       <img id="rockChoice" class="icon rock" src="images/icon-rock.svg" alt="" style="display:none;">
     </div>
 
     <!-- Win or Lose -->
-    <div id="winnerScreen">
+    <div id="winnerScreen" style="display:none;">
       <h1>YOU WIN!</h1>
       <h1>YOU LOSE</h1>
       <button class="playAgain" type="button" name="button">PLAY AGAIN</button>
@@ -85,6 +92,7 @@
 
     <!-- Computers Icon -->
     <div class="computerChoiceScreen">
+      <h3>Computers Choice</h3>
       <img id="paperComputer" class="icon paper" src="images/icon-paper.svg" alt="" style="display:none;">
       <img id="scissorsComputer" class="icon scissors" src="images/icon-scissors.svg" alt="" style="display:none;">
       <img id="rockComputer" class="icon rock" src="images/icon-rock.svg" alt="" style="display:none;">

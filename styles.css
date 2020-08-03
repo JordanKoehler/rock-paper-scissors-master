@@ -21,6 +21,10 @@ h2 {
   margin: 1px;
 }
 
+h3 {
+  color: white;
+}
+
 li {
   list-style: none;
   font-size: 20px;
@@ -29,7 +33,7 @@ li {
 .header {
   border-style: solid;
   border-radius: 10px;
-  margin: 3% 15% 5%;
+  margin: 3% 15%;
   padding: 2%;
   border-color: hsl(217, 16%, 45%);
 }
@@ -53,58 +57,87 @@ li {
 }
 
 /****** Rock Paper Scissors ******/
-.triangle {
-  margin: 100px auto;
-  display: block;
-  position: relative;
+
+main {
+  background-image: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-left: 500px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .icon {
   background-color: white;
-  border-radius: 50%;
+  border-radius: 100px;
   border-width: 15px;
   display: inline-block;
   border-style: solid;
   height: 75px;
   width: 75px;
   padding: 40px;
+  z-index: +1;
 }
 
 .paper {
-  display: inline-block;
-  position: absolute;
-  left: 445px;
-  top: 275px;
-  border-style: solid;
   border-color: hsl(230, 89%, 62%);
 }
 
 .scissors {
-  display: inline-block;
-  position: absolute;
-  left: 745px;
-  top: 275px;
   border-color: hsl(39, 89%, 49%);
 }
 
 .rock {
-  position: absolute;
-  left: 600px;
-  top: 525px;
   border-color: hsl(349, 71%, 52%);
 }
 
+/******** Main Screen Icon *******/
+.paper-main {
+  display: inline-block;
+  position: relative;
+  top: -80px;
+  left: -80px;
+}
+
+.rock-main {
+  display: inline-block;
+  position: relative;
+  top: 180px;
+  left: -320px;
+}
+
+.scissors-main {
+  display: inline-block;
+  position: relative;
+  top: -80px;
+  right: -10px;
+}
+
 /********* Versus Screen *******/
+.versusScreen{
+  height: 300px;
+  text-align: center;
+}
+
 .playersChoiceScreen {
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  position: relative;
+  top: 70px;
+  left: 350px;
 }
 
 .computerChoiceScreen {
-  position: absolute;
-  top: 100px;
-  left: 200px;
+  position: relative;
+  left: 800px;
+  top: -310px;
+}
+
+#winnerScreen {
+  align-self: center;
+  width: 300px;
+  text-align:center;
+  position: relative;
+  left: 525px;
+  top: -100px;
 }
 
 /********* Rules *********/
@@ -115,7 +148,7 @@ li {
 #ruleImage {
   background-color: white;
   border-radius: 25px;
-  position: relative;
+  position:absolute;
   margin-top: -500px;
   margin-left: 460px;
   padding: 45px;
@@ -149,5 +182,11 @@ li {
   color: hsl(229, 25%, 31%);
   padding: 20px 50px;
   border-radius: 10px;
-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+footer {
+  position: fixed;
+  margin-bottom: auto;
+  min-height: 100%;
 }
