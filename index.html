@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -24,46 +25,90 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
-<div class="header">
-  <ul>
-    <li><h1>ROCK</h1></li>
-    <li><h1>PAPER</h1></li>
-    <li><h1>SCISSORS</h1></li>
-  </ul>
-  <div class="score">
-    <h2>SCORE</h2>
-    <h1 id="score-points">0</h1>
-  </div>
-</div>
 
-  <div class="RPS-main">
+<body>
+
+  <!-- Header -->
+
+  <div class="header">
+    <ul>
+      <li>
+        <h1>ROCK</h1>
+      </li>
+      <li>
+        <h1>PAPER</h1>
+      </li>
+      <li>
+        <h1>SCISSORS</h1>
+      </li>
+    </ul>
+    <div class="score">
+      <h2>SCORE</h2>
+      <h1 id="score-points">0</h1>
+    </div>
+  </div>
+
+  <!-- Game  -->
+
+  <div id="RPS-main" style="display:block;">
     <img class="triangle" src="images/bg-triangle.svg" class="triange" alt="">
     <img id="paper" class="icon paper" src="images/icon-paper.svg" alt="">
     <img id="scissors" class="icon scissors" src="images/icon-scissors.svg" alt="">
-    <img  id="rock" class="icon rock" src="images/icon-rock.svg" alt="">
+    <img id="rock" class="icon rock" src="images/icon-rock.svg" alt="">
   </div>
 
-<button type="button" class="rules">RULES</button>
 
+  <div id="versusScreen" style="display:none;">
+    <!-- Players Icon -->
+    <div class="playersChoiceScreen">
+      <img id="paperChoice" class="icon paper" src="images/icon-paper.svg" alt="" style="display:none;">
+      <img id="scissorsChoice" class="icon scissors" src="images/icon-scissors.svg" alt="" style="display:none;">
+      <img id="rockChoice" class="icon rock" src="images/icon-rock.svg" alt="" style="display:none;">
+    </div>
 
-<div id="ruleImage" style="display:none;">
-  <h1>RULES</h1>
-  <input class="closeButton" type="image" src="images/icon-close.svg">
-  <img  src="images/image-rules.svg"  alt="">
-</div>
+    <!-- Win or Lose -->
+    <div id="winnerScreen">
+      <h1>YOU WIN!</h1>
+      <h1>YOU LOSE</h1>
+      <button class="playAgain" type="button" name="button">PLAY AGAIN</button>
+    </div>
 
+    <!-- Computers Icon -->
+    <div class="computerChoiceScreen">
+      <img id="paperComputer" class="icon paper" src="images/icon-paper.svg" alt="" style="display:none;">
+      <img id="scissorsComputer" class="icon scissors" src="images/icon-scissors.svg" alt="" style="display:none;">
+      <img id="rockComputer" class="icon rock" src="images/icon-rock.svg" alt="" style="display:none;">
+    </div>
 
-<footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
-</footer>
+
+  <!-- RULES -->
+
+  <button type="button" class="rules button">RULES</button>
+  <div id="ruleImage" style="display:none;">
+    <h1>RULES</h1>
+    <input class="closeButton" type="image" src="images/icon-close.svg">
+    <img src="images/image-rules.svg" alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
   <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
