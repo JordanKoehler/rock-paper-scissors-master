@@ -3,7 +3,6 @@ var computerChoice = [];
 var score = 0;
 const rockPaperScissors = ["rock", "paper", "scissors"];
 
-
 function computerPicks() {
   var randomNumber = Math.floor(Math.random() * 3);
   computerChoice.push(rockPaperScissors[randomNumber]);
