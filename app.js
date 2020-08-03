@@ -32,7 +32,7 @@ $(".icon").click(function() {
 
 function winLose() {
   if (playerChoice[0] == computerChoice[0]) {
-  document.getElementById("results").innerHTML = "DRAW"
+    document.getElementById("results").innerHTML = "DRAW"
   } else if (playerChoice == "rock") {
     if (computerChoice == "scissors") {
       document.getElementById("results").innerHTML = "YOU WIN"
@@ -71,7 +71,7 @@ $(".closeButton").click(function() {
 $(".playAgain").click(function() {
   document.getElementById('RPS-main').style.display = 'block';
   document.getElementById('versusScreen').style.display = 'none';
-  document.getElementById(playerChoice +"Choice").style.display = "none";
+  document.getElementById(playerChoice + "Choice").style.display = "none";
   document.getElementById(computerChoice + "Computer").style.display = "none"
   document.getElementById("computerChoiceScreen").style.display = "none"
   document.getElementById("winnerScreen").style.display = "none"

@@ -57,7 +57,6 @@ li {
 }
 
 /****** Rock Paper Scissors ******/
-
 main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
@@ -98,6 +97,7 @@ main {
   position: relative;
   top: -80px;
   left: -80px;
+  cursor: pointer;
 }
 
 .rock-main {
@@ -105,6 +105,7 @@ main {
   position: relative;
   top: 180px;
   left: -320px;
+  cursor: pointer;
 }
 
 .scissors-main {
@@ -112,10 +113,11 @@ main {
   position: relative;
   top: -80px;
   right: -10px;
+  cursor: pointer;
 }
 
 /********* Versus Screen *******/
-#versusScreen{
+#versusScreen {
   height: 500px;
   text-align: center;
 }
@@ -130,13 +132,12 @@ main {
   position: relative;
   top: -275px;
   left: 215px;
-
 }
 
 #winnerScreen {
   align-self: center;
   width: 300px;
-  text-align:center;
+  text-align: center;
   position: relative;
   left: 525px;
   top: -100px;
@@ -150,13 +151,13 @@ main {
 #ruleImage {
   background-color: white;
   border-radius: 25px;
-  position:absolute;
+  position: absolute;
   margin-top: -500px;
   margin-left: 460px;
   padding: 45px;
   width: 304px;
   height: auto;
-    box-shadow: 0 0 0 999em rgba(0,0,0,0.8);
+  box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.8);
 }
 
 #ruleImage>h1 {
@@ -186,6 +187,7 @@ main {
   padding: 20px 50px;
   border-radius: 10px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 footer {

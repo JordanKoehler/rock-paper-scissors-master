@@ -8,22 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  <!-- Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again -->
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
       font-size: 11px;
@@ -60,19 +46,19 @@
 
   <!-- Game  -->
 
-<main id="RPS-main" style="display:block;">
-  <div >
-    <div class="paper-main">
-    <img id="paper" class="icon paper" src="images/icon-paper.svg" alt="">
+  <main id="RPS-main" style="display:block;">
+    <div>
+      <div class="paper-main">
+        <img id="paper" class="icon paper" src="images/icon-paper.svg" alt="">
+      </div>
+      <div class="scissors-main">
+        <img id="scissors" class="icon scissors" src="images/icon-scissors.svg" alt="">
+      </div>
+      <div class="rock-main">
+        <img id="rock" class="icon rock" src="images/icon-rock.svg" alt="">
+      </div>
     </div>
-    <div class="scissors-main">
-    <img id="scissors" class="icon scissors" src="images/icon-scissors.svg" alt="">
-    </div>
-    <div class="rock-main">
-    <img id="rock" class="icon rock" src="images/icon-rock.svg" alt="">
-    </div>
-  </div>
-</main>
+  </main>
 
   <div id="versusScreen" style="display:none;">
     <!-- Players Icon -->
@@ -92,13 +78,12 @@
     </div>
 
     <!-- Computers Icon -->
-    <div class="computerChoiceScreen" id="computerChoiceScreen"style="display:none;">
+    <div class="computerChoiceScreen" id="computerChoiceScreen" style="display:none;">
       <h3>Computers Choice</h3>
       <img id="paperComputer" class="icon paper" src="images/icon-paper.svg" alt="" style="display:none;">
       <img id="scissorsComputer" class="icon scissors" src="images/icon-scissors.svg" alt="" style="display:none;">
       <img id="rockComputer" class="icon rock" src="images/icon-rock.svg" alt="" style="display:none;">
     </div>
-
   </div>
 
   <!-- RULES -->
