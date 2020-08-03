@@ -23,8 +23,9 @@ $(".icon").click(function() {
   document.getElementById('versusScreen').style.display = 'block';
   document.getElementById(playerPicks + "Choice").style.display = "inline-block";
   setTimeout(function() {
+    document.getElementById("computerChoiceScreen").style.display = "inline-block"
     document.getElementById(computerChoice + "Computer").style.display = "inline-block"
-    document.getElementById("winnerScreen").style.display = "inline-block"
+    document.getElementById("winnerScreen").style.display = "block"
     winLose();
   }, 1000);
 });
@@ -34,30 +35,27 @@ function winLose() {
     console.log('draw');
   } else if (playerChoice == "rock") {
     if (computerChoice == "scissors") {
-      console.log("win");
+      document.getElementById("results").innerHTML = "YOU WIN"
       score++;
       $("#score-points").text(score);
-      console.log(score);
     } else {
-      console.log("lose");
+      document.getElementById("results").innerHTML = "YOU LOSE"
     }
   } else if (playerChoice == "scissors") {
     if (computerChoice == "paper") {
-      console.log("win");
+      document.getElementById("results").innerHTML = "YOU WIN"
       score++;
       $("#score-points").text(score);
-      console.log(score);
     } else {
-      console.log("lose");
+      document.getElementById("results").innerHTML = "YOU LOSE"
     }
   } else if (playerChoice == "paper") {
     if (computerChoice == "rock") {
-      console.log("win");
+      document.getElementById("results").innerHTML = "YOU WIN"
       score++;
       $("#score-points").text(score);
-      console.log(score);
     } else {
-      console.log("lose");
+      document.getElementById("results").innerHTML = "YOU LOSE"
     }
   }
 }
@@ -75,5 +73,7 @@ $(".playAgain").click(function() {
   document.getElementById('versusScreen').style.display = 'none';
   document.getElementById(playerChoice +"Choice").style.display = "none";
   document.getElementById(computerChoice + "Computer").style.display = "none"
+  document.getElementById("computerChoiceScreen").style.display = "none"
+  document.getElementById("winnerScreen").style.display = "none"
   playAgain();
 })

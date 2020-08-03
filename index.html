@@ -85,13 +85,14 @@
 
     <!-- Win or Lose -->
     <div id="winnerScreen" style="display:none;">
-      <h1>YOU WIN!</h1>
-      <h1>YOU LOSE</h1>
+      <h1 id="results"></h1>
+      <!-- <h1>YOU WIN!</h1>
+      <h1>YOU LOSE</h1> -->
       <button class="playAgain" type="button" name="button">PLAY AGAIN</button>
     </div>
 
     <!-- Computers Icon -->
-    <div class="computerChoiceScreen">
+    <div class="computerChoiceScreen" id="computerChoiceScreen"style="display:none;">
       <h3>Computers Choice</h3>
       <img id="paperComputer" class="icon paper" src="images/icon-paper.svg" alt="" style="display:none;">
       <img id="scissorsComputer" class="icon scissors" src="images/icon-scissors.svg" alt="" style="display:none;">

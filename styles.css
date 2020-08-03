@@ -114,7 +114,7 @@ main {
 }
 
 /********* Versus Screen *******/
-.versusScreen{
+#versusScreen{
   height: 300px;
   text-align: center;
 }
@@ -122,13 +122,14 @@ main {
 .playersChoiceScreen {
   position: relative;
   top: 70px;
-  left: 350px;
+  left: -250px;
 }
 
 .computerChoiceScreen {
   position: relative;
-  left: 800px;
-  top: -310px;
+  top: -275px;
+  left: 215px;
+
 }
 
 #winnerScreen {
