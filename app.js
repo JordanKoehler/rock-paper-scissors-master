@@ -32,7 +32,7 @@ $(".icon").click(function() {
 
 function winLose() {
   if (playerChoice[0] == computerChoice[0]) {
-    console.log('draw');
+  document.getElementById("results").innerHTML = "DRAW"
   } else if (playerChoice == "rock") {
     if (computerChoice == "scissors") {
       document.getElementById("results").innerHTML = "YOU WIN"

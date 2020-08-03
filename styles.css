@@ -77,6 +77,7 @@ main {
   width: 75px;
   padding: 40px;
   z-index: +1;
+  box-shadow: 0 5px 2px 4px #aaaaaa inset;
 }
 
 .paper {
@@ -115,7 +116,7 @@ main {
 
 /********* Versus Screen *******/
 #versusScreen{
-  height: 300px;
+  height: 500px;
   text-align: center;
 }
 
@@ -155,6 +156,7 @@ main {
   padding: 45px;
   width: 304px;
   height: auto;
+    box-shadow: 0 0 0 999em rgba(0,0,0,0.8);
 }
 
 #ruleImage>h1 {
