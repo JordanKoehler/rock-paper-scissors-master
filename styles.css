@@ -196,14 +196,9 @@ footer {
   min-height: 100%;
 }
 
-/********* Large Desktop Screens ********/ 
+/********* Large Desktop Screens ********/
 @media screen and (min-width: 1440px) {
-  
-  body {
-    background-color: skyblue;
-    background-image: none;
-  }
-  
+
   .score {
   position: absolute;
   left: 1300px;
@@ -215,7 +210,7 @@ footer {
   width: 150px;
   height: 100px;
 }
-  
+
   main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
@@ -224,31 +219,14 @@ footer {
   margin-top: 150px;
   margin-bottom: 100px;
 }
-  
-  
+
+
 }
 
 
-/********* Mobile ********/ 
+/********* Mobile ********/
 @media screen and (max-width: 660px) {
   
-  body {
-    background-color: skyblue;
-    background-image: none;
-  }
-  
-  .score {
-  position: absolute;
-  left: 1300px;
-  top: 90px;
-  text-align: center;
-  padding: 5px;
-  background-color: white;
-  border-radius: 10px;
-  width: 150px;
-  height: 100px;
-}
-  
   main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
@@ -257,6 +235,98 @@ footer {
   margin-top: 150px;
   margin-bottom: 100px;
 }
-  
-  
+
+/***** Header ******/
+
+ul {
+  padding-left: 4%;
+}
+
+  .header {
+    margin: 5% 10%;
+    padding: 2%;
+  }
+
+  .score {
+  position: absolute;
+  left: 255px;
+  top: 50px;
+  text-align: center;
+  padding: 5px;
+  width: 75px;
+  height: 75px;
+}
+
+#score-points {
+  font-size: 50px;
+}
+
+  main {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/*** Rules Popup *****/
+
+#ruleImage {
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 30px;
+  padding: 25px;
+  width: 300px;
+}
+
+/***** RPS Game *****/
+
+.icon {
+  height: 50px;
+  width: 50px;
+  padding: 30px;
+}
+
+.paper-main {
+  position: relative;
+  top: -40px;
+  left: -30px;
+}
+
+.rock-main {
+  position: relative;
+  top: 60px;
+  left: 80px;
+}
+
+.scissors-main {
+  position: relative;
+  top: -40px;
+  right: -50px;
+}
+#versusScreen {
+  height: 500px;
+  text-align: center;
+}
+
+/**** Results Screen *****/
+
+.playersChoiceScreen {
+  position: relative;
+  top: 70px;
+  left: -100px;
+}
+
+.computerChoiceScreen {
+  position: relative;
+  top: -230px;
+  left: 100px;
+}
+
+#winnerScreen {
+  align-self: center;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  left: 60px;
+  top: 100px;
+}
+
 }
