@@ -195,3 +195,68 @@ footer {
   margin-bottom: auto;
   min-height: 100%;
 }
+
+/********* Large Desktop Screens ********/ 
+@media screen and (min-width: 1440px) {
+  
+  body {
+    background-color: skyblue;
+    background-image: none;
+  }
+  
+  .score {
+  position: absolute;
+  left: 1300px;
+  top: 90px;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+}
+  
+  main {
+  background-image: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-left: 800px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+  
+  
+}
+
+
+/********* Mobile ********/ 
+@media screen and (max-width: 660px) {
+  
+  body {
+    background-color: skyblue;
+    background-image: none;
+  }
+  
+  .score {
+  position: absolute;
+  left: 1300px;
+  top: 90px;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+}
+  
+  main {
+  background-image: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-left: 800px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+  
+  
+}
