@@ -77,3 +77,9 @@ $(".playAgain").click(function() {
   document.getElementById("winnerScreen").style.display = "none"
   playAgain();
 })
+
+});
+
+app.listen(3000, function() {
+  console.log("Server started on port 3000");
+});
