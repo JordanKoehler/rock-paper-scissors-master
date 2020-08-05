@@ -77,5 +77,3 @@ $(".playAgain").click(function() {
   document.getElementById("winnerScreen").style.display = "none"
   playAgain();
 })
-
-}
