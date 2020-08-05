@@ -197,7 +197,7 @@ footer {
 }
 
 /********* Large Desktop Screens ********/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1445px) {
 
   .score {
   position: absolute;
@@ -220,13 +220,26 @@ footer {
   margin-bottom: 100px;
 }
 
+#ruleImage {
+  position: absolute;
+  margin-left: 700px;
+}
+
+#winnerScreen {
+  align-self: center;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  left: 785px;
+  top: 100px;
+}
 
 }
 
 
 /********* Mobile ********/
 @media screen and (max-width: 660px) {
-  
+
   main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
