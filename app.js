@@ -21,9 +21,10 @@ $(".icon").click(function() {
   computerPicks();
   document.getElementById('RPS-main').style.display = 'none';
   document.getElementById('versusScreen').style.display = 'block';
+  document.getElementById('playersChoiceScreen').style.display = "block";
   document.getElementById(playerPicks + "Choice").style.display = "inline-block";
   setTimeout(function() {
-    document.getElementById("computerChoiceScreen").style.display = "inline-block"
+    document.getElementById("computerChoiceScreen").style.display = "block"
     document.getElementById(computerChoice + "Computer").style.display = "inline-block"
     document.getElementById("winnerScreen").style.display = "block"
     winLose();

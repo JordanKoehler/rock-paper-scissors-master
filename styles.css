@@ -31,6 +31,9 @@ li {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  width: 65vw;
   border-style: solid;
   border-radius: 10px;
   margin: 3% 15%;
@@ -39,9 +42,6 @@ li {
 }
 
 .score {
-  position: absolute;
-  left: 900px;
-  top: 90px;
   text-align: center;
   padding: 5px;
   background-color: white;
@@ -61,9 +61,10 @@ main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
   height: 300px;
-  margin-left: 500px;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  width: 305px;
+  margin: 0 auto;
+  margin-top: 5%;
+  position: relative;
 }
 
 .icon {
@@ -75,8 +76,9 @@ main {
   height: 75px;
   width: 75px;
   padding: 40px;
-  z-index: +1;
+  z-index: 1;
   box-shadow: 0 5px 2px 4px #aaaaaa inset;
+  cursor: pointer;
 }
 
 .paper {
@@ -93,54 +95,44 @@ main {
 
 /******** Main Screen Icon *******/
 .paper-main {
-  display: inline-block;
-  position: relative;
-  top: -80px;
-  left: -80px;
-  cursor: pointer;
+  position: absolute;
+  top: -60px;
+  left: -60px;
 }
 
 .rock-main {
-  display: inline-block;
-  position: relative;
-  top: 180px;
-  left: -320px;
-  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  left: 60px;
 }
 
 .scissors-main {
-  display: inline-block;
-  position: relative;
-  top: -80px;
-  right: -10px;
-  cursor: pointer;
+  position: absolute;
+  top: -60px;
+  left: 190px;
 }
 
 /********* Versus Screen *******/
 #versusScreen {
-  height: 500px;
-  text-align: center;
+  display: flex !important;
+  margin: 0 auto;
+  width: 600px;
 }
 
 .playersChoiceScreen {
-  position: relative;
-  top: 70px;
-  left: -250px;
+  text-align: center;
 }
 
-.computerChoiceScreen {
-  position: relative;
-  top: -275px;
-  left: 215px;
+#computerChoiceScreen {
+  text-align: center;
 }
 
 #winnerScreen {
+  display: none;
   align-self: center;
   width: 300px;
   text-align: center;
-  position: relative;
-  left: 525px;
-  top: -100px;
+  margin: 0 70px;
 }
 
 /********* Rules *********/
@@ -151,13 +143,13 @@ main {
 #ruleImage {
   background-color: white;
   border-radius: 25px;
-  position: absolute;
-  margin-top: -500px;
-  margin-left: 460px;
+  margin: 0 auto;
   padding: 45px;
   width: 304px;
-  height: auto;
-  box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.8);
+  position: relative;
+  top: -70vh;
+  z-index: 10;
+  box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.5);
 }
 
 #ruleImage>h1 {
@@ -197,32 +189,15 @@ footer {
 }
 
 /********* Large Desktop Screens ********/
-@media screen and (min-width: 1445px) {
-
-  .score {
-  position: absolute;
-  left: 1300px;
-  top: 90px;
-  text-align: center;
-  padding: 5px;
-  background-color: white;
-  border-radius: 10px;
-  width: 150px;
-  height: 100px;
-}
+@media screen and (max-width: 400px) {
 
   main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
-  height: 300px;
-  margin-left: 800px;
-  margin-top: 150px;
-  margin-bottom: 100px;
 }
 
 #ruleImage {
-  position: absolute;
-  margin-left: 700px;
+  top: -90vh;
 }
 
 #winnerScreen {
@@ -243,10 +218,7 @@ footer {
   main {
   background-image: url("images/bg-triangle.svg");
   background-repeat: no-repeat;
-  height: 300px;
-  margin-left: 800px;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 60px;
 }
 
 /***** Header ******/
@@ -256,16 +228,13 @@ ul {
 }
 
   .header {
-    margin: 5% 10%;
+    margin: 0 auto;
     padding: 2%;
   }
 
   .score {
-  position: absolute;
-  left: 255px;
-  top: 50px;
-  text-align: center;
-  padding: 5px;
+  align-self: center;
+  padding: 10px;
   width: 75px;
   height: 75px;
 }
@@ -274,17 +243,9 @@ ul {
   font-size: 50px;
 }
 
-  main {
-  margin-left: 50px;
-  margin-top: 50px;
-}
-
 /*** Rules Popup *****/
 
 #ruleImage {
-  position: absolute;
-  margin-top: -500px;
-  margin-left: 30px;
   padding: 25px;
   width: 300px;
 }
